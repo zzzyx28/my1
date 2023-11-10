@@ -4,6 +4,13 @@
 		<text>这是一个基础卡片示例，此示例展示了一个标题加标题额外信息的标准卡片。</text>
 	</uni-card>
 
+	<button size="default" type="default" 
+	style="color:#ffffff;backgroundColor:#55aaff;borderColor:#55aaff" 
+	hover-class="is-hover">按钮</button>
+
+
+
+
   <view class="content">
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
@@ -43,4 +50,11 @@ const title = ref('Hello')
   font-size: 36rpx;
   color: #8f8f94;
 }
+
+
+.is-hover {
+	color: rgba(255, 255, 255, 0.6);
+	background-color: #55aaff;
+	border-color: #55aaff;
+  }
 </style>
