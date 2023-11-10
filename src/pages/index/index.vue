@@ -4,12 +4,12 @@
 		<text>这是一个基础卡片示例，此示例展示了一个标题加标题额外信息的标准卡片。</text>
 	</uni-card>
 
-	<button size="default" type="default" 
-	style="color:#ffffff;backgroundColor:#55aaff;borderColor:#55aaff" 
-	hover-class="is-hover">按钮</button>
-
-
-
+	<navigator url="/src/pages/my/my" open-type="switchTab">
+		<button size="default" type="default" 
+		style="color:#ffffff;backgroundColor:#55aaff;borderColor:#55aaff" 
+		hover-class="is-hover">进入home</button>
+		
+	</navigator>
 
   <view class="content">
     <image class="logo" src="/static/logo.png" />
@@ -20,11 +20,14 @@
 </template>
 
 <script setup lang="ts">
+
 import { ref } from 'vue'
 const title = ref('Hello')
+
 </script>
 
 <style>
+
 .content {
   display: flex;
   flex-direction: column;
